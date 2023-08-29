@@ -1,0 +1,71 @@
+
+
+.App {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+
+}
+.gameboard {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #060606;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  border:2px solid #050505 ;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid red;
+  box-shadow: 2px 2px 17px purple;
+  box-sizing: border-box;
+}
+
+.cross {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  transform: rotate(45deg);
+  
+  
+}
+
+.cross:before, .cross:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  box-shadow: 1px 1px 15px #000;
+}
+.cross:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+.cross:after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
+p{
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #050505;
+  color: white;
+  border-radius: 10px 0 10px 0;
+}
